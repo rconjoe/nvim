@@ -7,7 +7,7 @@ return {
     main = 'ibl',
     opts = function(_, opts)
       return require('indent-rainbowline').make_opts(opts, {
-        color_transparency = 0.12,
+        color_transparency = 0.08,
       })
     end,
     dependencies = {
