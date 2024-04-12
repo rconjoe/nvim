@@ -102,7 +102,7 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 --  Use CTRL+<hjkl> to switch between windows
 --
 --  See `:help wincmd` for a list of all window commands
-vim.keymap.set('n', '<leader>qa', '<C-w>q', { desc = 'Quit/close window' })
+vim.keymap.set('n', '<leader>q', ':qa<CR>', { desc = 'Quit/close window' })
 vim.keymap.set('n', '<leader>w', ':w<CR>', { desc = 'Save' })
 vim.keymap.set('n', '-', '<C-w>s', { desc = 'split' })
 vim.keymap.set('n', '|', '<C-w>v', { desc = 'vsplit' })
