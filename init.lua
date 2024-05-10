@@ -125,6 +125,12 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+vim.filetype.add {
+  extension = {
+    tcss = 'css',
+  },
+}
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -471,7 +477,6 @@ require('lazy').setup({
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
-        --
 
         lua_ls = {
           -- cmd = {...},
